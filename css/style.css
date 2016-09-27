@@ -1,0 +1,15 @@
+﻿
+/*修改ionic 的css样式*/
+.tabs-top>.tabs, .tabs.tabs-top{top:30px;background-color:#0094ff;color:rgba(255,255,255,0.4);}
+.item-icon-left .icon, .item-icon-right .icon{font-size:16px;}
+.bar.bar-positive{background-color:#0094ff;}
+.tabs-striped .tab-item.activated, .tabs-striped .tab-item.active, .tabs-striped .tab-item.tab-item-active{border-color:#fff;color:#fff;}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.tabs-title{height:30px;font-size:16px;}
+
+.font-light{color:#fff;}
+
+.passList-rj-push-right{position: absolute; right: 10px;top: 15px;}
+.tabs-rj-push-right{position: absolute; right: 10px;top: 5px;}

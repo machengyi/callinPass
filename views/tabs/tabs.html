@@ -1,0 +1,19 @@
+﻿
+<ion-header-bar class="bar-positive tabs-title">
+    <p>{{customerName}}</p>
+    <span class="tabs-rj-push-right">pass日期：{{passDate}}</span>
+</ion-header-bar>  
+<ion-tabs class="tabs-striped tabs-top">  
+    <ion-tab title="内容" ui-sref="tabs.passContent" >
+        <ion-nav-view name="passContent-tab"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="资料" ui-sref="tabs.infoContent">
+        <ion-nav-view name="infoContent-tab"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="指派" ui-sref="tabs.assignContent">
+        <ion-nav-view name="assignContent-tab"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
+<div class="bar bar-footer bar-balanced" ng-show="returnButtonShow" style="background-color: #0094ff; ">
+    <div class="title">返回</div>
+</div>

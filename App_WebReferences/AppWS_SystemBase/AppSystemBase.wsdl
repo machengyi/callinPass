@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidateAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgAuthorize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="progCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgAuthorizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProgAuthorizeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataAuthorize1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="progCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zcCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataAuthorize1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataAuthorize1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataAuthorize2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="progCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zcCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsRefCRMGG" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataAuthorize2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataAuthorize2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateAccount" />
+  </wsdl:message>
+  <wsdl:message name="ValidateAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProgAuthorizeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProgAuthorize" />
+  </wsdl:message>
+  <wsdl:message name="GetProgAuthorizeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProgAuthorizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataAuthorize1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataAuthorize1" />
+  </wsdl:message>
+  <wsdl:message name="GetDataAuthorize1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataAuthorize1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetDataAuthorize2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataAuthorize2" />
+  </wsdl:message>
+  <wsdl:message name="GetDataAuthorize2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataAuthorize2Response" />
+  </wsdl:message>
+  <wsdl:portType name="AppSystemBaseSoap">
+    <wsdl:operation name="ValidateAccount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">請傳入[系統代號]、[工號] 來驗證是否有此系統登入權限&lt;BR&gt;成功回傳Y或N;例外失敗回傳Error字串。</wsdl:documentation>
+      <wsdl:input message="tns:ValidateAccountSoapIn" />
+      <wsdl:output message="tns:ValidateAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">請傳入[系統代號]、[工號] 取得使用者資訊。&lt;BR&gt;成功回傳JSON;例外失敗回傳Error字串。</wsdl:documentation>
+      <wsdl:input message="tns:GetUserInfoSoapIn" />
+      <wsdl:output message="tns:GetUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgAuthorize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">請傳入[系統代號]、[工號]、[程式代號] 驗證是否有此作業權限&lt;BR&gt;成功回傳Y或N;例外失敗回傳Error字串。</wsdl:documentation>
+      <wsdl:input message="tns:GetProgAuthorizeSoapIn" />
+      <wsdl:output message="tns:GetProgAuthorizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataAuthorize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">請傳入[系統代號]、[工號]、[程式代號]、[ZC代號] 取得權限管控字串&lt;BR&gt;成功回傳sqlwhere 字串;例外失敗回傳Error字串。</wsdl:documentation>
+      <wsdl:input name="GetDataAuthorize1" message="tns:GetDataAuthorize1SoapIn" />
+      <wsdl:output name="GetDataAuthorize1" message="tns:GetDataAuthorize1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataAuthorize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">請傳入[系統代號]、[工號]、[程式代號]、[ZC代號]、[是否可看電銷田] 取得權限管控字串&lt;BR&gt;成功回傳sqlwhere 字串;例外失敗回傳Error字串。</wsdl:documentation>
+      <wsdl:input name="GetDataAuthorize2" message="tns:GetDataAuthorize2SoapIn" />
+      <wsdl:output name="GetDataAuthorize2" message="tns:GetDataAuthorize2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AppSystemBaseSoap" type="tns:AppSystemBaseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateAccount">
+      <soap:operation soapAction="http://tempuri.org/ValidateAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgAuthorize">
+      <soap:operation soapAction="http://tempuri.org/GetProgAuthorize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataAuthorize">
+      <soap:operation soapAction="http://tempuri.org/GetDataAuthorize1" style="document" />
+      <wsdl:input name="GetDataAuthorize1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDataAuthorize1">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataAuthorize">
+      <soap:operation soapAction="http://tempuri.org/GetDataAuthorize2" style="document" />
+      <wsdl:input name="GetDataAuthorize2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDataAuthorize2">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AppSystemBaseSoap12" type="tns:AppSystemBaseSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateAccount">
+      <soap12:operation soapAction="http://tempuri.org/ValidateAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgAuthorize">
+      <soap12:operation soapAction="http://tempuri.org/GetProgAuthorize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataAuthorize">
+      <soap12:operation soapAction="http://tempuri.org/GetDataAuthorize1" style="document" />
+      <wsdl:input name="GetDataAuthorize1">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDataAuthorize1">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataAuthorize">
+      <soap12:operation soapAction="http://tempuri.org/GetDataAuthorize2" style="document" />
+      <wsdl:input name="GetDataAuthorize2">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetDataAuthorize2">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AppSystemBase">
+    <wsdl:port name="AppSystemBaseSoap" binding="tns:AppSystemBaseSoap">
+      <soap:address location="http://mobile2.digiwin.com.cn:8081/weixinApp/AppWS/AppSystemBase.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AppSystemBaseSoap12" binding="tns:AppSystemBaseSoap12">
+      <soap12:address location="http://mobile2.digiwin.com.cn:8081/weixinApp/AppWS/AppSystemBase.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

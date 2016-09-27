@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://mobile2.digiwin.com.cn:8081/weixinApp/AppWS/AppSystemBase.asmx?wsdl" docRef="http://mobile2.digiwin.com.cn:8081/weixinApp/AppWS/AppSystemBase.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://mobile2.digiwin.com.cn:8081/weixinApp/AppWS/AppSystemBase.asmx" xmlns:q1="http://tempuri.org/" binding="q1:AppSystemBaseSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://mobile2.digiwin.com.cn:8081/weixinApp/AppWS/AppSystemBase.asmx" xmlns:q2="http://tempuri.org/" binding="q2:AppSystemBaseSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
